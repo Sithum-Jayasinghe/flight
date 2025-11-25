@@ -2,10 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import { BrowserRouter, Routes, Route, HashRouter } from 'react-router-dom';
+
+import { createHashRouter, RouterProvider } from "react-router-dom";
 
 // Components
-//import Users from './Components/User/Users';
 import Payments from './Components/Payment/Payments';
 import Schedules from './Components/Schedule/Schedules';
 import Staffs from './Components/Staff/staffs';
@@ -14,31 +14,25 @@ import Passengers from './Components/Passenger/Passengers';
 import Checks from './Components/Check/Checks';
 import Registers from './Components/Register/Registers';
 
-
-// 🟡 MUI X Date Picker support
+// MUI Date Picker
 import { LocalizationProvider } from '@mui/x-date-pickers';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 
+const router = createHashRouter([
+  { path: "/", element: <App /> },
+  { path: "/payments", element: <Payments /> },
+  { path: "/schedules", element: <Schedules /> },
+  { path: "/staffs", element: <Staffs /> },
+  { path: "/books", element: <Books /> },
+  { path: "/passengers", element: <Passengers /> },
+  { path: "/checks", element: <Checks /> },
+  { path: "/registers", element: <Registers /> },
+]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <LocalizationProvider dateAdapter={AdapterDayjs}>
-    <HashRouter>
-      <Routes>
-        <Route path="/" element={<App />} />
-      
-        
-        <Route path="/payments" element={<Payments />} />
-        <Route path="/schedules" element={<Schedules />} />
-        <Route path="/staffs" element={<Staffs />} />
-         <Route path="/books" element={<Books />} />
-         <Route path="/passengers" element={<Passengers />} />
-           <Route path="/checks" element={<Checks />} />
-        <Route path="/registers" element={<Registers />} />
-
-
-      </Routes>
-    </HashRouter>
+    <RouterProvider router={router} />
   </LocalizationProvider>
 );
