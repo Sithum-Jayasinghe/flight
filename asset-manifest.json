@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/flight/static/css/main.4dc6b8d4.css",
+    "main.js": "/flight/static/js/main.234908d0.js",
+    "static/js/977.b584b783.chunk.js": "/flight/static/js/977.b584b783.chunk.js",
+    "static/js/455.79219f07.chunk.js": "/flight/static/js/455.79219f07.chunk.js",
+    "static/media/back.mp4": "/flight/static/media/back.f6ac61c42dd8304ee829.mp4",
+    "static/media/pay2.mp4": "/flight/static/media/pay2.f791145c3e5a997263d8.mp4",
+    "static/media/Schdule.mp4": "/flight/static/media/Schdule.77d898b150794f99a398.mp4",
+    "static/media/st1.mp4": "/flight/static/media/st1.82f2345d431bce712755.mp4",
+    "static/media/go.mp4": "/flight/static/media/go.a8400a106f6ab88e8ace.mp4",
+    "static/media/p3.png": "/flight/static/media/p3.0c4d2256a04296da5227.png",
+    "static/media/logo.png": "/flight/static/media/logo.5b6c0d7b03396b3187de.png",
+    "index.html": "/flight/index.html",
+    "main.4dc6b8d4.css.map": "/flight/static/css/main.4dc6b8d4.css.map",
+    "main.234908d0.js.map": "/flight/static/js/main.234908d0.js.map",
+    "977.b584b783.chunk.js.map": "/flight/static/js/977.b584b783.chunk.js.map",
+    "455.79219f07.chunk.js.map": "/flight/static/js/455.79219f07.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4dc6b8d4.css",
+    "static/js/main.234908d0.js"
+  ]
+}
